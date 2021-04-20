@@ -5,4 +5,5 @@ export class MiaLegal {
     content: any = {};
     created_at: string = '';
     last_revision: string = '';
+    language: string = '';
 }

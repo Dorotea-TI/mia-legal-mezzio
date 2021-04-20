@@ -45,6 +45,7 @@ class SaveHandler extends \Mia\Auth\Request\MiaAuthRequestHandler
         $item->title = $this->getParam($request, 'title', '');
         $item->content = $this->getParam($request, 'content', []);
         $item->last_revision = $this->getParam($request, 'last_revision', '');        
+        $item->language = $this->getParam($request, 'language', 'en');        
         
         try {
             $item->save();

@@ -11,6 +11,7 @@ namespace Mia\Legal\Model;
  * @property mixed $created_at Description for variable
  * @property mixed $updated_at Description for variable
  * @property mixed $last_revision Description for variable
+ * @property mixed $language Description for variable
 
  *
  * @OA\Schema()
@@ -49,7 +50,11 @@ namespace Mia\Legal\Model;
  *  type="",
  *  description=""
  * )
-
+ * @OA\Property(
+ *  property="language",
+ *  type="",
+ *  description=""
+ * )
  *
  * @author matiascamiletti
  */

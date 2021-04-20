@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Repository;
+namespace Mia\Legal\Repository;
 
 use \Illuminate\Database\Capsule\Manager as DB;
 

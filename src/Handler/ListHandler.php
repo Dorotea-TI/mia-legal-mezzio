@@ -92,7 +92,7 @@ class ListHandler extends \Mia\Auth\Request\MiaAuthRequestHandler
         // Configurar query
         $configure = new \Mia\Database\Query\Configure($this, $request);
         // Obtenemos información
-        $rows = \App\Repository\MiaLegalRepository::fetchByConfigure($configure);
+        $rows = \Mia\Legal\Repository\MIALegalRepository::fetchByConfigure($configure);
         // Devolvemos respuesta
         return new \Mia\Core\Diactoros\MiaJsonResponse($rows->toArray());
     }

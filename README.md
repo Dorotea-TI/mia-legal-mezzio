@@ -2,7 +2,7 @@
 
 1. Incluir libreria:
 ```bash
-composer require mobileia/mia-legal-mezzio
+composer require agencycoda/mia-legal-mezzio
 ```
 2. Incluir rutas:
 ```php

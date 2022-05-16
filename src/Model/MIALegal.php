@@ -62,7 +62,7 @@ class MIALegal extends \Illuminate\Database\Eloquent\Model
 {
     protected $table = 'mia_legal';
     
-    protected $casts = ['content' => 'array'];
+    //protected $casts = ['content' => 'array'];
     /**
      * Indicates if the model should be timestamped.
      *

@@ -58,7 +58,7 @@ namespace Mia\Legal\Model;
  *
  * @author matiascamiletti
  */
-class MiaLegal extends \Illuminate\Database\Eloquent\Model
+class MIALegal extends \Illuminate\Database\Eloquent\Model
 {
     protected $table = 'mia_legal';
     

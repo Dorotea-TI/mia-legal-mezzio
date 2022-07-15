@@ -67,10 +67,10 @@ class SaveHandler extends \Mia\Auth\Request\MiaAuthRequestHandler
         // Obtenemos ID si fue enviado
         $itemId = $this->getParam($request, 'id', '');
         // Buscar si existe el item en la DB
-        $item = \Mia\Legal\Model\MiaLegal::find($itemId);
+        $item = \Mia\Legal\Model\MIALegal::find($itemId);
         // verificar si existe
         if($item === null){
-            return new \Mia\Legal\Model\MiaLegal();
+            return new \Mia\Legal\Model\MIALegal();
         }
         // Devolvemos item para editar
         return $item;

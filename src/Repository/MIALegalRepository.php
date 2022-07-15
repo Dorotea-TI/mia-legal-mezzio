@@ -18,7 +18,7 @@ class MIALegalRepository
      */
     public static function fetchByConfigure(\Mia\Database\Query\Configure $configure)
     {
-        $query = \Mia\Legal\Model\MiaLegal::select('mia_legal.*');
+        $query = \Mia\Legal\Model\MIALegal::select('mia_legal.*');
         
         if(!$configure->hasOrder()){
             $query->orderByRaw('id DESC');

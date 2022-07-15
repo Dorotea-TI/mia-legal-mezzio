@@ -39,7 +39,7 @@ class FetchHandler extends \Mia\Auth\Request\MiaAuthRequestHandler
         // Obtenemos ID si fue enviado
         $itemId = $this->getParam($request, 'id', '');
         // Buscar si existe el tour en la DB
-        $item = \Mia\Legal\Model\MiaLegal::find($itemId);
+        $item = \Mia\Legal\Model\MIALegal::find($itemId);
         // verificar si existe
         if($item === null){
             return new \Mia\Core\Diactoros\MiaJsonErrorResponse(1, 'This element is not exist.');

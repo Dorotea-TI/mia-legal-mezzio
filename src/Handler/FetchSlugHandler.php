@@ -39,7 +39,7 @@ class FetchSlugHandler extends \Mia\Auth\Request\MiaAuthRequestHandler
         // Obtenemos ID si fue enviado
         $itemSlug = $this->getParam($request, 'slug', '');
         // Buscar si existe el tour en la DB
-        $item = \Mia\Legal\Model\MiaLegal::where('slug', $itemSlug)->first();
+        $item = \Mia\Legal\Model\MIALegal::where('slug', $itemSlug)->first();
         // verificar si existe
         if($item === null){
             return new \Mia\Core\Diactoros\MiaJsonErrorResponse(1, 'This element is not exist.');
